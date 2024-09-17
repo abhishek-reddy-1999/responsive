@@ -1,0 +1,30 @@
+.nav{
+    height:50px;
+    background-color: rgb(235, 227, 227);
+    color: rgb(104, 96, 96);
+    font-size: 20px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.nav .nav-bar{
+    display: none;
+    
+}
+.navbar-toggler{
+    display:none ;
+}
+.nav-brand{
+    display:none;
+    
+}
+@media screen and (max-width: 708px){
+    .nav .nav-bar{
+        display: block;
+    }
+    .navbar-toggler{
+        display:block ;
+    }
+    .nav-brand{
+        display:block;
+    }
+}

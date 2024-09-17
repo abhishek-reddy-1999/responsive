@@ -1,0 +1,12 @@
+.wrapper{
+    display:flex;
+}
+.main{
+    margin-left: -12px;
+    margin-right:-12px;
+}
+footer{
+    margin-left: -12px;
+    margin-right:-12px;
+    padding:20px;
+}
