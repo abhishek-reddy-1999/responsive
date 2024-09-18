@@ -17,6 +17,8 @@
     display:none;
     
 }
+
+
 @media screen and (max-width: 708px){
     .nav .nav-bar{
         display: block;
