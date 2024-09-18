@@ -1,10 +1,16 @@
 .nav{
+    
     height:50px;
     background-color: rgb(235, 227, 227);
     color: rgb(104, 96, 96);
     font-size: 20px;
     margin-left: -12px;
     margin-right: -12px;
+}
+.nav .nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav .nav-bar{
     display: none;
@@ -15,9 +21,16 @@
 }
 .nav-brand{
     display:none;
-    
 }
-
+.Sections{
+    display:flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 990px) {
+    .Sections{
+        display:none;
+    }
+}
 
 @media screen and (max-width: 708px){
     .nav .nav-bar{
@@ -28,5 +41,8 @@
     }
     .nav-brand{
         display:block;
+    }
+    .Sections{
+        display:none;
     }
 }

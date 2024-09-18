@@ -3,208 +3,250 @@ import { createTheme } from "@mui/material/styles";
 
 // color design tokens export
 export const tokens = (mode) => ({
-  ...(mode === "dark"
-    ? {
-      primary: {
-          100: "#cdcdce",
-          200: "#9b9c9d",
-          300: "#696a6b",
-          400: "#37393a",
-          500: "#050709",
-          600: "#040607",
-          700: "#030405",
-          800: "#020304",
-          900: "#010102"
-},
-        grey: {
-          100: "#d0d1d5",
-          200: "#a1a4ab",
-          300: "#727681",
-          400: "#1F2A40",
-          500: "#141b2d",
-          600: "#101624",
-          700: "#0c101b",
-          800: "#080b12",
-          900: "#040509",
-        },
-        greenAccent: {
-          100: "#dbf5ee",
-          200: "#b7ebde",
-          300: "#94e2cd",
-          400: "#70d8bd",
-          500: "#4cceac",
-          600: "#3da58a",
-          700: "#2e7c67",
-          800: "#1e5245",
-          900: "#0f2922",
-        },
-        redAccent: {
-          100: "#f8dcdb",
-          200: "#f1b9b7",
-          300: "#e99592",
-          400: "#e2726e",
-          500: "#db4f4a",
-          600: "#af3f3b",
-          700: "#832f2c",
-          800: "#58201e",
-          900: "#2c100f",
-        },
-        blueAccent: {
-          100: "#e1e2fe",
-          200: "#c3c6fd",
-          300: "#a4a9fc",
-          400: "#868dfb",
-          500: "#6870fa",
-          600: "#535ac8",
-          700: "#3e4396",
-          800: "#2a2d64",
-          900: "#151632",
-        },
-      }
-    : {
-        grey: {
-          100: "#141414",
-          200: "#292929",
-          300: "#3d3d3d",
-          400: "#525252",
-          500: "#666666",
-          600: "#858585",
-          700: "#a3a3a3",
-          800: "#c2c2c2",
-          900: "#e0e0e0",
-        },
-        primary: {
-          100: "#040509",
-          200: "#080b12",
-          300: "#0c101b",
-          400: "#f2f0f0", // manually changed
-          500: "#141b2d",
-          600: "#1F2A40",
-          700: "#727681",
-          800: "#a1a4ab",
-          900: "#d0d1d5",
-        },
-        greenAccent: {
-          100: "#0f2922",
-          200: "#1e5245",
-          300: "#2e7c67",
-          400: "#3da58a",
-          500: "#4cceac",
-          600: "#70d8bd",
-          700: "#94e2cd",
-          800: "#b7ebde",
-          900: "#dbf5ee",
-        },
-        redAccent: {
-          100: "#2c100f",
-          200: "#58201e",
-          300: "#832f2c",
-          400: "#af3f3b",
-          500: "#db4f4a",
-          600: "#e2726e",
-          700: "#e99592",
-          800: "#f1b9b7",
-          900: "#f8dcdb",
-        },
-        blueAccent: {
-          100: "#151632",
-          200: "#2a2d64",
-          300: "#3e4396",
-          400: "#535ac8",
-          500: "#6870fa",
-          600: "#868dfb",
-          700: "#a4a9fc",
-          800: "#c3c6fd",
-          900: "#e1e2fe",
-        },
-      }),
+    ...(mode === "dark"
+        ? {
+            blue: {
+                1: '#0d1520',
+                2: '#111927',
+                3: '#0d2847',
+                4: '#003362',
+                5: '#004074',
+                6: '#104d87',
+                7: '#205d9e',
+                8: '#2870bd',
+                9: '#0090ff',
+                10: '#3b9eff',
+                11: '#70b8ff',
+                12: '#c2e6ff'
+
+
+            },
+            purple: {
+                1: '#18111b',
+                2: '#1e1523',
+                3: '#301c3b',
+                4: '#3d224e',
+                5: '#48295c',
+                6: '#54346b',
+                7: '#664282',
+                8: '#8457aa',
+                9: '#8e4ec6',
+                10: '#9a5cd0',
+                11: '#d19dff',
+                12: '#ecd9fa'
+            },
+            green: {
+                1: '#0e1512',
+                2: '#121b17',
+                3: '#132d21',
+                4: '#113b29',
+                5: '#174933',
+                6: '#20573e',
+                7: '#28684a',
+                8: '#2f7c57',
+                9: '#30a46c',
+                10: '#33b074',
+                11: '#3dd68c',
+                12: '#b1f1cb',
+            },
+            Sky: {
+                1: '#0d141f',
+                2: '#111a27',
+                3: '#112840',
+                4: '#113555',
+                5: '#154467',
+                6: '#1b537b',
+                7: '#1f6692',
+                8: '#197cae',
+                9: '#7ce2fe',
+                10: '#a8eeff',
+                11: '#75c7f0',
+                12: '#c2f3ff',
+            },
+            gray: {
+                1: '#111111',
+                2: '#191919',
+                3: '#222222',
+                4: '#2a2a2a',
+                5: '#313131',
+                6: '#3a3a3a',
+                7: '#484848',
+                8: '#606060',
+                9: '#6e6e6e',
+                10: '#7b7b7b',
+                11: '#b4b4b4',
+                12: '#eeeeee',
+
+            }
+
+
+        }
+        : {
+            blue: {
+                1: '#fbfdff',
+                2: '#f4faff',
+                3: '#e6f4fe',
+                4: '#d5efff',
+                5: '#c2e5ff',
+                6: '#acd8fc',
+                7: '#8ec8f6',
+                8: '#5eb1ef',
+                9: '#0090ff',
+                10: '#0588f0',
+                11: '#0d74ce',
+                12: '#113264',
+            },
+            purple: {
+                1: '#fefcfe',
+                2: '#fbf7fe',
+                3: '#f7edfe',
+                4: '#f2e2fc',
+                5: '#ead5f9',
+                6: '#e0c4f4',
+                7: '#d1afec',
+                8: '#be93e4',
+                9: '#8e4ec6',
+                10: '#8347b9',
+                11: '#8145b5',
+                12: '#402060',
+
+            },
+            green: {
+                1: '#fbfefc',
+                2: '#f4fbf6',
+                3: '#e6f6eb',
+                4: '#d6f1df',
+                5: '#c4e8d1',
+                6: '#adddc0',
+                7: '#8eceaa',
+                8: '#5bb98b',
+                9: '#30a46c',
+                10: '#2b9a66',
+                11: '#218358',
+                12: '#193b2d',
+            },
+            Sky: {
+                1: '#f9feff',
+                2: '#f1fafd',
+                3: '#e1f6fd',
+                4: '#d1f0fa',
+                5: '#bee7f5',
+                6: '#a9daed',
+                7: '#8dcae3',
+                8: '#60b3d7',
+                9: '#7ce2fe',
+                10: '#74daf8',
+                11: '#00749e',
+                12: '#1d3e56',
+            },
+            gray: {
+                1: '#fcfcfc',
+                2: '#f9f9f9',
+                3: '#f0f0f0',
+                4: '#e8e8e8',
+                5: '#e0e0e0',
+                6: '#d9d9d9',
+                7: '#cecece',
+                8: '#bbbbbb',
+                9: '#8d8d8d',
+                10: '#838383',
+                11: '#646464',
+                12: '#202020',
+
+            }
+
+
+        }),
 });
 
 // mui theme settings
 export const themeSettings = (mode) => {
-  const colors = tokens(mode);
-  return {
-    palette: {
-      mode: mode,
-      ...(mode === "dark"
-        ? {
-            // palette values for dark mode
-            primary: {
-              main: colors.primary[500],
+    const colors = tokens(mode);
+    return {
+        palette: {
+            mode: mode,
+            ...(mode === "dark"
+                ? {
+                    // palette values for dark mode
+                    primary: {
+                        main: colors.blue[1],
+                    },
+                    secondary: {
+                        main: colors.blue[5],
+                    },
+                    neutral: {
+                        dark: colors.purple[7],
+                        main: colors.purple[5],
+                        light: colors.purple[1],
+                    },
+                    background: {
+                        default: colors.blue[1],
+                    },
+                }
+                : {
+                    // palette values for light mode
+                    primary: {
+                        main: colors.blue[1]
+                    },
+                    secondary: {
+                        main: colors.green[5],
+                    },
+                    neutral: {
+                        dark: colors.purple[7],
+                        main: colors.purple[5],
+                        light: colors.purple[1],
+                    },
+                    background: {
+                        default: colors.blue[1],
+                    },
+                }),
+        },
+        typography: {
+            fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+            fontSize: 12,
+            h1: {
+                fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+                fontSize: 40,
             },
-            secondary: {
-              main: colors.greenAccent[500],
+            h2: {
+                fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+                fontSize: 32,
             },
-            neutral: {
-              dark: colors.grey[700],
-              main: colors.grey[500],
-              light: colors.grey[100],
+            h3: {
+                fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+                fontSize: 24,
             },
-            background: {
-              default: colors.primary[500],
+            h4: {
+                fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+                fontSize: 20,
             },
-          }
-        : {
-            // palette values for light mode
-            primary: {
-              main: colors.primary[100],
+            h5: {
+                fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+                fontSize: 16,
             },
-            secondary: {
-              main: colors.greenAccent[500],
+            h6: {
+                fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+                fontSize: 14,
             },
-            neutral: {
-              dark: colors.grey[700],
-              main: colors.grey[500],
-              light: colors.grey[100],
-            },
-            background: {
-              default: "#fcfcfc",
-            },
-          }),
-    },
-    typography: {
-      fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-      fontSize: 12,
-      h1: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 40,
-      },
-      h2: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 32,
-      },
-      h3: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 24,
-      },
-      h4: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 20,
-      },
-      h5: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 16,
-      },
-      h6: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 14,
-      },
-    },
-  };
+        },
+    };
 };
 
+// context for color mode
 export const ColorModeContext = createContext({
-    toggleColorMode:()=>{},
+    toggleColorMode: () => { },
 });
-export const useMode=()=>{
-    const [mode,setMode]=useState("dark");
-    const colorMode=useMemo(
-        ()=>({
-            toggleColorMode:()=>
-            setMode((prev)=>(prev==="light"?"dark":"light")),
-        }),
+
+export const useMode = () => {
+    const [mode, setMode] = useState("dark");
+
+    const colorMode = useMemo(() => ({
+        toggleColorMode: () =>
+            setMode((prev) => (prev === "light" ? "dark" : "light")),
+    }),
         []
     );
-    const theme=useMemo(()=>createTheme(themeSettings(mode)),[mode]);
-    return [theme,colorMode];
+
+    const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+    return [theme, colorMode];
 };

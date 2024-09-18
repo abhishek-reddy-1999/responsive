@@ -1,11 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Sidebar from './component/Sidebar/Sidebar.jsx';
-import Navbars from './component/Navbar/Navbar.jsx'
 import { ThemeProvider } from '@emotion/react';
-import { tokens,useMode,ColorModeContext } from './component/theme/Theme.js';
+import './App.css';
+import Navbars from './component/Navbar/Navbar.jsx';
+import Sidebar from './component/Sidebar/Sidebar.jsx';
+import { ColorModeContext, tokens, useMode } from './component/theme/Theme.js';
 
 function App() {
 
@@ -19,12 +16,12 @@ function App() {
       <Sidebar></Sidebar>
       <div class='container-fluid'>
         <Navbars></Navbars>
-      <main className='main p-3' style={{backgroundColor: colors.grey[500],
-      color: colors.grey[100],}}>
+      <main className='main p-3' style={{backgroundColor: colors.blue[5],
+      color: colors.gray[6],}}>
             <h4>Main</h4>
         </main>
-        <footer style={{backgroundColor: colors.grey[500],
-      color: colors.grey[100],}}>
+        <footer style={{backgroundColor: colors.blue[5],
+      color: colors.gray[6],}}>
           <h3>Fotter</h3>
           </footer>
           </div>
